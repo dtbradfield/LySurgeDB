@@ -12,7 +12,7 @@ let mongoose = require('mongoose');
 
 let isProduction = process.env.NODE_ENV === 'production';
 
-let app = express;
+let app = express();
 
 app.use(cors());
 

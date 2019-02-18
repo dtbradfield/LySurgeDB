@@ -1,4 +1,4 @@
-let router = requore('express').Router();
+let router = require('express').Router();
 
 router.use('/', require('./users'));
 
