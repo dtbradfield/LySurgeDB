@@ -36,6 +36,9 @@ if (isProduction) {
     mongoose.set('debug', true);
 }
 
+require('./models/User');
+require('./config/passport')
+
 app.use(require('./routes'));
 
 //Catch 404 and fwd to err handler, also do error handle:
